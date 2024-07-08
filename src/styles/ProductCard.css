@@ -1,0 +1,19 @@
+.product__info span{
+    font-size: 1.3rem;
+}
+.product__card-bottom span{
+    padding: 5px;
+    font-size: 1.3rem;
+    background: var(--primary-color);
+    color: #fff;
+}
+.price{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.product__card-bottom{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;  
+}

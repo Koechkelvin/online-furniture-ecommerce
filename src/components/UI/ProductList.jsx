@@ -2,14 +2,13 @@ import React from 'react'
 import ProductCard from './ProductCard';
 
 const ProductList = () => {
-  return <>
-   <ProductCard/> 
-   <ProductCard/>
-   <ProductCard/> 
-   <ProductCard/>
-
-
-  </>;
+ return(
+  <>
+  {DataTransfer.map((item)=>(
+    <ProductCard item={item}/>
+  ))}
+  </>
+ );
 };
 
-export default ProductList
+export default ProductList;
