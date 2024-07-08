@@ -3,6 +3,10 @@ import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from "reactstrap";
 import heroImg from '../assets/images/hero-img.png';
 import '../styles/home.css';
+import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
+import ProductList from '../components/UI/ProductList';
+
 
 const Home = () => {
   const year = new Date().getFullYear();
@@ -22,7 +26,9 @@ const Home = () => {
                   ipsam cum aspernatur commodi aperiam animi labore.
                   At, possimus?
                 </p>
-                <button className='buy__btn'>SHOP NOW</button>
+                <motion.button whileTap={{scale:1.3}}
+                className='buy__btn'><Link to ='/shop'> SHOP NOW</Link>
+                </motion.button>
               </div>
             </Col> 
             
@@ -34,6 +40,16 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+       <section className='trending products'>
+          <Container>
+            <Row>
+              <Col lg='12'className="text-center">
+                <h2 className='Section__title'>Trending Products</h2>
+              </Col>
+              <ProductList></ProductList>
+            </Row>
+          </Container>
+       </section>
     </Helmet>
   );
 };
