@@ -31,3 +31,11 @@
     font-weight: 600;
     color: var(--primary-color);
 }
+.timer__count{
+    background:var(--primary-color);
+    height: 300px;
+}
+.timer__count img{
+    height:70% !important ;
+    width: 70% !important ;
+}

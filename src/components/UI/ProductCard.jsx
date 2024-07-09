@@ -1,5 +1,5 @@
 import React from 'react'
-import productImg from '../../assets/images/arm-chair-01.jpg'
+//import productImg from '../../assets/images/arm-chair-01.jpg'
 import {Col} from 'reactstrap';
 //import '../../styles/ProductCard';
 import {motion} from "framer-motion";
@@ -12,7 +12,7 @@ const ProductCard = ({item}) => {
     <Col lg="3" md="4">
         <div className='product__item'>
         <div className='product__img'>
-        <motion.img whileHover ={{scale:0.9}}src={item.imgurl} alt=""/>
+        <motion.img whileHover ={{scale:0.9}}src={item.imgUrl} alt=""/>
         </div>
         <div className="product__info">
         <h3 className='product__name'>
@@ -26,6 +26,7 @@ const ProductCard = ({item}) => {
               <i className="ri-add-fill"></i>
               </motion.span>
         </div>
+        
     </div>
     </Col>
     

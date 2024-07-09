@@ -29,6 +29,18 @@ import productImg23 from "../images/wireless-01.png";
 
 import productImg25 from "../images/wireless-03.png";
 
+import productImg26 from "../images/chair-01.png";
+import productImg27 from "../images/chair-02.png";
+
+import productImg28 from "../images/couch-01.png";
+import productImg29 from "../images/couch-02.png";
+import productImg30 from "../images/couch-03.png"
+import productImg31 from "../images/couch-04.png";
+
+import productImg32 from "../images/triple-sofa-01.png";
+import productImg33 from "../images/triple-sofa-02.png";
+import productImg34 from "../images/triple-sofa-03.png";
+
 const products = [
   {
     id: "01",
@@ -571,6 +583,204 @@ const products = [
       },
     ],
     avgRating: 4.8,
+  },
+  {
+    id: "26",
+    productName: "wooden chair",
+    imgUrl: productImg26,
+    category: "chair",
+    price: 150,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "27",
+    productName: "mahogany chair",
+    imgUrl: productImg27,
+    category: "chair",
+    price: 150,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 3.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.5,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.2,
+  },
+  {
+    id: "28",
+    productName: "cotton couch",
+    imgUrl: productImg28,
+    category: "couch",
+    price: 320,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.6,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.5,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.6,
+  },
+  {
+    id: "29",
+    productName: "fluffy couch",
+    imgUrl: productImg29,
+    category: "couch",
+    price: 150,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "30",
+    productName: "silk couch",
+    imgUrl: productImg30,
+    category: "couch",
+    price: 350,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "31",
+    productName: "leather couch",
+    imgUrl: productImg31,
+    category: "couch",
+    price: 150,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "32",
+    productName: "x-rated sofa",
+    imgUrl: productImg32,
+    category: "sofa",
+    price: 150,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "33",
+    productName: "triple sofa",
+    imgUrl: productImg33,
+    category: "sofa",
+    price: 220,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "34",
+    productName: "dense sofa",
+    imgUrl: productImg34,
+    category: "sofa",
+    price: 150,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
   },
 ];
 
