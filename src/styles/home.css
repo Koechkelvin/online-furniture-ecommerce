@@ -1,41 +1,88 @@
-.hero__section{
+/* Hero Section */
+.hero__section {
     background: var(--hero-bg);
-
 }
-.hero__section p{
+
+.hero__section p {
     line-height: 28px;
     color: var(--primary-color);
 }
-.hero__section h2{
+
+.hero__section h2 {
     color: var(--primary-color);
     font-size: 2.5rem;
     font-weight: 600;
     margin: 20px 0px;
-
 }
-.hero__section p:nth-child(1){
+
+.hero__section p:nth-child(1) {
     font-weight: 500;
 }
-.buy__btn{
+
+.buy__btn {
     border-radius: 5px;
     border: none;
     padding: 8px 20px;
     outline: none;
-     background: var(--primary-color);
-     color: #fff;
-     font-size: 1rem;
-     cursor: pointer;
-     margin-top: 50px;
-} 
-.Section__title{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.Section__title {
     font-weight: 600;
     color: var(--primary-color);
 }
-.timer__count{
-    background:var(--primary-color);
+
+.timer__count {
+    background: var(--primary-color);
     height: 300px;
 }
-.timer__count img{
-    height:70% !important ;
-    width: 70% !important ;
+
+.timer__count img {
+    height: 70% !important;
+    width: 70% !important;
+    object-fit: contain;
+}
+
+/* New Arrivals Section */
+.new__arrivals {
+    background: var(--secondary-bg);
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.new__arrivals .Section__title {
+    margin-bottom: 30px;
+    flex-basis: 100%;
+}
+
+.new__arrivals .product__card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+/* Popular Categories Section */
+.popular__categories {
+    background: var(--tertiary-bg);
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.popular__categories .Section__title {
+    margin-bottom: 30px;
+    flex-basis: 100%;
+}
+
+.popular__categories .product__card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 0;
 }

@@ -13,15 +13,20 @@ const Home = () => {
   
   const [trendingProducts, setTrendingProducts] = useState([]);
   const [bestsalesProducts, setBestsalesProducts] = useState([]); 
+  const [newarrivalsProducts, setNewarrivalsProduct] = useState([]);
+  const [popularcategoriesProducts, setPopularcategories] = useState([]);
   const year = new Date().getFullYear();
   
   useEffect(() => {
     const filteredTrendingProducts = products.filter(item => item.category === 'chair');
     const filteredBestSalesProducts = products.filter(item => item.category === 'sofa');
-    
+    const filteredNewarrivalsProducts = products.filter(item => item.category === 'sofaseat');
+    const filteredPopularcategoriesProducts = products.filter(item => item.category === 'couch');
+
     setTrendingProducts(filteredTrendingProducts);
     setBestsalesProducts(filteredBestSalesProducts);
-    
+    setNewarrivalsProduct(filteredNewarrivalsProducts);
+    setPopularcategories(filteredPopularcategoriesProducts);
   }, []);
   
   return (
@@ -62,7 +67,7 @@ const Home = () => {
             <Col lg='12' className="text-center">
               <h2 className='Section__title'>Trending Products</h2>
             </Col>
-            <ProductList data={trendingProducts }></ProductList>
+            <ProductList data={trendingProducts}></ProductList>
           </Row>
         </Container> 
       </section>
@@ -81,36 +86,35 @@ const Home = () => {
       <section className='timer__count'>
         <Container>
           <Row>
-            <Col lg='6' md='6'>
-            <img src={counterImg} alt=''/>
+            <Col lg='6' md='6' className='text__end'>
+              <img src={counterImg} alt=''/>
             </Col>
           </Row>
         </Container>
-        <hr/>
-        <section className='new__arrivals'>
-          <Container>
-            <Row>
-              <Col lg='12' className="text-center">
-              <h2 classsName='Section__title'>New Furniture</h2>
-         
-              </Col>
-            </Row>
-          </Container>
-        <hr/>
-        </section>
-        <section className='popular__categories'>
-          <Container>
-            <Row>
-              <Col lg='12' className="text-center">
-              <h2 classsName='Section__title'>Popular Categories</h2>
-         
-              </Col>
-            </Row>
-          </Container>
-
-        </section>
+      </section>
+      <hr/>
+      <section className='new__arrivals'>
+        <Container>
+          <Row>
+            <Col lg='12' className="text-center">
+              <h2 className='Section__title'>New Furniture</h2>
+              <ProductList data={newarrivalsProducts} />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <hr/>
+      <section className='popular__categories'>
+        <Container>
+          <Row>
+            <Col lg='12' className="text-center">
+              <h2 className='Section__title'>Popular Categories</h2>
+              <ProductList data={popularcategoriesProducts}/>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </Helmet>
   );
 };
- export default Home;
+export default Home;

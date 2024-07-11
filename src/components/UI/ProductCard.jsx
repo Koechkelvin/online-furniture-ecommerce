@@ -1,7 +1,7 @@
 import React from 'react'
 //import productImg from '../../assets/images/arm-chair-01.jpg'
 import {Col} from 'reactstrap';
-//import '../../styles/ProductCard';
+import '../../styles/ProductCard.css';
 import {motion} from "framer-motion";
 import {Link} from 'react-router-dom';
 

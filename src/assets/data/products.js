@@ -720,7 +720,7 @@ const products = [
     id: "32",
     productName: "x-rated sofa",
     imgUrl: productImg32,
-    category: "sofa",
+    category: "sofaseat",
     price: 150,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -742,7 +742,7 @@ const products = [
     id: "33",
     productName: "triple sofa",
     imgUrl: productImg33,
-    category: "sofa",
+    category: "sofaseat",
     price: 220,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -764,7 +764,7 @@ const products = [
     id: "34",
     productName: "dense sofa",
     imgUrl: productImg34,
-    category: "sofa",
+    category: "sofaseat",
     price: 150,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
