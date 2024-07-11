@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import {Container,Row,Col,ListGroup,ListGroupItem} from "reactstrap"
-import logo from '../../assets/images/eco-logo.png';
 import './footer.css';
 
 const Footer = () => {
@@ -10,18 +9,17 @@ const Footer = () => {
     <footer className='footer'>
       <Container>
         <Row>
-          <Col lg="4">
+          <Col lg="4" className="mb-4" md='6'>
           <div className='logo'>
-              <img src={logo} alt="logo" />
               <div>
-                <h1>Furniture shop</h1>
+                <h1 className='text-white'>Furniture shop</h1>
               </div>
             </div>
-            <p className="footer__text mt -4">
+            <p className="footer__text mt-4">
             Furniture has been an essential part of human life for centuries,furniture has evolved significantly over time. In the contemporary era, furniture design blends art with functionality, providing comfort and style to living spaces.
               </p>
           </Col>
-          <Col lg="3">
+          <Col lg="3" md='3' className="mb-4">
           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Top categories</h4>
               <ListGroup className='mb-3'>
@@ -45,28 +43,37 @@ const Footer = () => {
               </ListGroup>
           </div>
           </Col>
-          <Col lg="2">
+          <Col lg="2" md='3' className="mb-4">
           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Contacts</h4>
-              <ListGroup className='mb-3'>
-                <ListGroupItem className='ps-0 border-0'>
-                  <span></span>
+              <ListGroup className='footer__contact'>
+                <ListGroupItem className='ps-0 border-0 d-flex
+                align-items-center gap-2'>
+                  <span>
+                    <i class="ri-map-pin-line"></i>
+                  </span>
                   <p>234 Laikipia, Nakuru-Kenya</p>
                 </ListGroupItem>
 
-                <ListGroupItem className='ps-0 border-0'> 
-                  <span></span>
+                <ListGroupItem className='ps-0 border-0 d-flex
+                align-items-center gap-2'> 
+                  <span>
+                    <i class="ri-phone-line"></i>
+                  </span>
                   <p>+(254)725364640</p>
                 </ListGroupItem>
 
-                <ListGroupItem className='ps-0 border-0'>
-                  <span></span>
+                <ListGroupItem className='ps-0 border-0 d-flex
+                align-items-center gap-2'>
+                  <span>
+                    <i class="ri-mail-line"></i>
+                  </span>
                   <p>furnitureX@gmailcom</p>
                 </ListGroupItem>
               </ListGroup>
               </div>
           </Col>
-          <Col lg="3">
+          <Col lg="3" md='4' > 
           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Useful Links</h4>
               <ListGroup className='mb-3'>

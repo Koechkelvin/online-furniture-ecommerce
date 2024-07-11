@@ -7,10 +7,11 @@ import {Link} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import { cartActions } from '../../redux/slices/cartSlice';
 import { toast } from 'react-toastify';
+//import { addItem } from '../../redux/slices/cartSlice';
 
 const ProductCard = ({item}) => {
-  const dispatch = useDispatch()
-  const addToCart=()=>{
+   const dispatch = useDispatch()
+   const addToCart=()=>{
 
     dispatch(
       cartActions.addItem({
@@ -21,7 +22,7 @@ const ProductCard = ({item}) => {
     })
   );
   toast.success('Product added successfully');
-  };
+  // };
   return ( 
     <Col lg="3" md="4">
         <div className='product__item'>
@@ -34,7 +35,8 @@ const ProductCard = ({item}) => {
         </h3>
         <span>{item.category}</span>
         </div>
-        <div className='product__card-bottom d-flex align-items-center justify-content-between p-2'>
+        <div className='product__card-bottom d-flex align-items-center 
+        justify-content-between p-2'>
             <span className='price'>{item.price}</span>
             <motion.span whileTap={{scale:1.2}} onClick={addToCart}>
               <i className="ri-add-fill"></i>
@@ -46,5 +48,6 @@ const ProductCard = ({item}) => {
     
   );
 };
+}
 
 export default ProductCard;

@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../assets/images/hero-img.png';
+import Services from '../services/Services';
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ProductList from '../components/UI/ProductList';
-import products from '../assets/data/products'; 
+import products from '../assets/data/products';
+import Clock from '../components/UI/Clock'; 
 import counterImg from '../assets/images/counter-timer-img.png';
+
 
 const Home = () => {
   
@@ -60,7 +63,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
+      <Services/>
       <section className='trending products'>
         <Container>
           <Row>
@@ -86,7 +89,19 @@ const Home = () => {
       <section className='timer__count'>
         <Container>
           <Row>
-            <Col lg='6' md='6' className='text__end'>
+            <Col lg='6' md='12'>
+            <div className='clock__top-content'> 
+              <h4 className='text-white fs-6 mb-2'>Limited Edition</h4>
+              <h3 className='text-white fs-5 mb-3'>Quality Armchair</h3>
+
+            </div>
+            <Clock/>
+            <motion.button whileTap={{scale:1.2}} 
+            className='buy__btn store__btn'>
+              <Link to='/shop'>Visit Store</Link>
+              </motion.button>
+            </Col>
+            <Col lg='6' md='12' className='text-end counter__img'>
               <img src={counterImg} alt=''/>
             </Col>
           </Row>
@@ -114,6 +129,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+     
     </Helmet>
   );
 };

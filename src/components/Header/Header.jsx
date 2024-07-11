@@ -28,7 +28,9 @@ const nav__links=[
 const Header = () => {
   const headerRef = useRef(null);        
   const totalQuantity =useSelector(state=> state.cart.totalQuantity)
+
   const menuRef = useRef (null);
+
   const stickyHeaderFunc =()=>{
     window.addEventListener("scroll", () =>{
       if (
@@ -40,15 +42,18 @@ const Header = () => {
         headerRef.current.classList.remove("sticky__header");
       }
     });
+  };
     useEffect(()=>{
       stickyHeaderFunc();
+
       return() => window.removeEventListener("scroll", stickyHeaderFunc);
     });
-   const menuToggle =() => menuRef.current.classList.toggle ("active__menu");
-  }
+   const menuToggle =() => menuRef.current.classList.toggle 
+   ("active__menu");
+  
   return (
 
-    <header className="header">
+    <header className="header" ref ={headerRef} > 
       <Container>
         <Row>
           <div className='nav__wrapper'>
@@ -56,10 +61,9 @@ const Header = () => {
               <img src={logo} alt="logo" />
               <div>
                 <h2>Furniture shop</h2>
-                <p>Est 2024</p>
               </div>
             </div>
-            <div className="navigation"> 
+            <div className="navigation" ref ={menuRef} onClick={menuToggle}> 
               <motion.ul className="menu">
                {
                 nav__links.map((item, index) =>(
@@ -69,32 +73,35 @@ const Header = () => {
                     }>{item.display}
                     </NavLink>
                   </li>
-                ))
-               }
+                ))}
+               
               </motion.ul>
             </div>
             <div className='nav__icons'>
-              <span className="fav__icon"><i className="ri-heart-line"></i>
-              <span className='badge'>{totalQuantity}</span>
-              </span> 
-              <span className="cart__icon"><i className="ri-shopping-cart-line"></i>
+              <span className="fav__icon">
+                <i className="ri-heart-line"></i>
               <span className='badge'>2</span>
+              </span> 
+              <span className="cart__icon">
+                <i className="ri-shopping-cart-line"></i>
+              <span className='badge'>{totalQuantity}</span>
               </span> 
               <span>
                 <motion.img whileTap={{scale: 1.2}}src={userIcon} 
                 alt="" />
               </span>
-            </div>
-            <div className='mobile__menu'>
-              <span> onClick ={menuToggle}
+              <div className='mobile__menu'>
+              <span onClick ={menuToggle} >
                 <i className="ri-menu-line"></i>
                 </span> 
-            </div>
+            </div> 
+           
           </div>
+        </div>
         </Row>
       </Container>
     </header>
   );
 };
-
 export default Header;
+

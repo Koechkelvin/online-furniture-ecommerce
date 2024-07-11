@@ -57,6 +57,7 @@
     
 }
 .nav__active{
+
 font-weight: 700 !important;
 }  
 .fav__icon{
@@ -82,3 +83,72 @@ font-weight: 700 !important;
     justify-content: center;
     align-items: center;
 } 
+.sticky__header {
+    height: 70px;
+    width: 100px;
+    position: sticky;
+    line-height:70px ;
+    left:0 ;
+    top: 0;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    z-index: 999;
+    background: #fff;
+}
+
+@media only screen and (max-width:768px ){
+    .navigation{
+        top: 0;
+        left:0 ;
+        width:100px ;
+        height:100px ;
+        background: #0000008f;
+        position: fixed;
+        display: none;
+        z-index: 999;
+    }
+
+.menu{
+    top: 0;
+    position: absolute;
+    right:0 ;
+    width:250px ;
+    height: 100%;
+    background: #fff;
+    z-index:99999 ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.mobile__menu{
+    display: block;
+}
+.active__menu{
+    display: block;
+}
+.logo h1 {
+    font-style: 1rem;
+}
+.mobile__menu span i {
+    font-style: 1.1rem !important;
+}
+.logo img{
+    width: 1rem;
+    height: 1rem;
+}
+.fav__icon i,
+.cart__icon i {
+    font-size: 1.2rem !important;
+}
+
+.nav__icons span img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.header {
+    width: 100px;
+    width: 60px;
+    line-height: 60px;
+}
+
+}

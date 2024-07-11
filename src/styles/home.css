@@ -86,3 +86,54 @@
     box-sizing: border-box;
     margin-bottom: 0;
 }
+.store__btn{
+    font-weight: 600;
+    color:var(--primary-color) ;
+    background: #fff;
+}
+.store__btn a:hover{
+    color: var(--primary-color);
+}
+
+
+@media only screen and (max-width:992px ) {
+    .hero__section h2 {
+        font-style: 2rem;
+    }
+    .Section__title {
+        font-style: 1.7rem;
+    }
+    .counter__img {
+        display: none;
+    }
+    .clock__top-content {
+        text-align: center;
+        
+    }
+    .clock__top-content h4 {
+        font-size: 0.9rem !important;
+    }
+    .clock__top-content h3 {
+        font-size: 1rem !important;
+    }
+}
+@media only screen and (max-width:768px ) {
+    .hero__content h2 {
+        font-style: 1.6rem;
+    }
+    .hero__content p {
+        font-style: 0.9rem;
+    }
+     .buy__btn {
+        font-style: 0.9rem;
+     }
+     .Section__title {
+        font-size: 1.4rem;
+     }
+}
+@media only screen and (max-width:576px ){
+.hero__content {
+    margin-top: 40px;
+    padding-top: 0;
+}
+}
