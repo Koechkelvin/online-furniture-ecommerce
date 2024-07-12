@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const ProductList = ({ data }) => {
+const ProductsList = ({ data }) => {
   return (
     <>
       {data?.map((item, index) => (
@@ -11,4 +11,4 @@ const ProductList = ({ data }) => {
   );
 };
 
-export default ProductList;
+export default ProductsList;

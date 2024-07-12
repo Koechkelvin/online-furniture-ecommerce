@@ -22,7 +22,7 @@ const ProductCard = ({item}) => {
     })
   );
   toast.success('Product added successfully');
-  // };
+  };
   return ( 
     <Col lg="3" md="4">
         <div className='product__item'>
@@ -48,6 +48,6 @@ const ProductCard = ({item}) => {
     
   );
 };
-}
+
 
 export default ProductCard;

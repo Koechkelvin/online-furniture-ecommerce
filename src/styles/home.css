@@ -1,4 +1,4 @@
-/* Hero Section */
+
 .hero__section {
     background: var(--hero-bg);
 }
@@ -47,7 +47,7 @@
     object-fit: contain;
 }
 
-/* New Arrivals Section */
+
 .new__arrivals {
     background: var(--secondary-bg);
     padding: 50px 0;
@@ -67,7 +67,7 @@
     margin-bottom: 0;
 }
 
-/* Popular Categories Section */
+
 .popular__categories {
     background: var(--tertiary-bg);
     padding: 50px 0;

@@ -6,11 +6,11 @@ import Services from '../services/Services';
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import ProductList from '../components/UI/ProductList';
+import ProductList from '../components/UI/ProductsList';
 import products from '../assets/data/products';
 import Clock from '../components/UI/Clock'; 
 import counterImg from '../assets/images/counter-timer-img.png';
-
+//import Footer from '../components/Footer/Footer'; 
 
 const Home = () => {
   
@@ -129,7 +129,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-     
+      
     </Helmet>
   );
 };

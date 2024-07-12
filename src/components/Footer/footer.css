@@ -1,7 +1,9 @@
 .footer {
-     color: var(--primary-color);
+     background: var(--primary-color);
      padding-top: 60px;
      padding-bottom: 30px;
+     color: #fff;
+
 }
 .footer__text {
      color: rgba(255, 255, 255, 0.735);
