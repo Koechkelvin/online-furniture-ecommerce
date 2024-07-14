@@ -1,7 +1,12 @@
 .common__section{
-   background: linear-gradient(rgba(0,0,0.563),rgba(0,0,0,0.563)),
+   /* background: linear-gradient(rgba(0,0,0.563),rgba(0,0,0,0.563)),
    url('../assets/images/phone-bg.jpg') no repeat center center;
-   background-size: contain;
+   background-size: contain; */
+   background-color: rgb(31, 115, 115);
+   padding: 180px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
       
 }
 .common__section h1{
