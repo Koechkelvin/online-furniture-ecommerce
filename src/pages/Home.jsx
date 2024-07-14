@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
-import heroImg from '../assets/images/hero-img.png';
 import Services from '../services/Services';
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
@@ -9,6 +8,7 @@ import { motion } from 'framer-motion';
 import ProductList from '../components/UI/ProductsList';
 import products from '../assets/data/products';
 import Clock from '../components/UI/Clock'; 
+import heroImg from '../assets/images/hero-img.png';
 import counterImg from '../assets/images/counter-timer-img.png';
 //import Footer from '../components/Footer/Footer'; 
 

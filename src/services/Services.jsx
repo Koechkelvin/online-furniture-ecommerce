@@ -27,4 +27,4 @@ const Services = () => {
   </section>
 }
 
-export default Services
+export default Services;
