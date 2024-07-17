@@ -1,6 +1,7 @@
 import React,{useRef, useEffect} from 'react';
-import { NavLink } from 'react-router-dom'; // Ensure this is from 'react-router-dom'
+import { NavLink } from 'react-router-dom'; 
 import { Container, Row } from 'reactstrap';
+import {Link} from 'react-router-dom';
 import './header.css';
 import {motion} from 'framer-motion'
 
@@ -82,10 +83,12 @@ const Header = () => {
                 <i className="ri-heart-line"></i>
               <span className='badge'>2</span>
               </span> 
-              <span className="cart__icon">
-                <i className="ri-shopping-cart-line"></i>
-              <span className='badge'>{totalQuantity}</span>
-              </span> 
+              <Link to="/cart">
+      <span className="cart__icon">
+        <i className="ri-shopping-cart-line"></i>
+        <span className='badge'>{totalQuantity}</span>
+      </span>
+    </Link>
               <span>
                 <motion.img whileTap={{scale: 1.2}}src={userIcon} 
                 alt="" />

@@ -29,17 +29,30 @@ import productImg23 from "../images/wireless-01.png";
 
 import productImg25 from "../images/wireless-03.png";
 
-import productImg26 from "../images/chair-01.png";
-import productImg27 from "../images/chair-02.png";
+import productImg26 from "../images/chair77-removebg-preview.png";
+import productImg27 from "../images/chair78-removebg-preview.png";
 
-import productImg28 from "../images/couch-01.png";
-import productImg29 from "../images/couch-02.png";
-import productImg30 from "../images/couch-03.png"
-import productImg31 from "../images/couch-04.png";
+import productImg28 from "../images/chair79-removebg-preview.png";
+import productImg29 from "../images/chair80-removebg-preview.png";
+import productImg31 from "../images/couch1__21_-removebg-preview (2).png";
+import productImg32 from "../images/couch1__2_-removebg-preview.png";
+import productImg33 from "../images/couch1__4_-removebg-preview.png";
+import productImg34 from "../images/couch1__5_-removebg-preview.png";
+import productImg35 from "../images/couch1__6_-removebg-preview.png";
+import productImg36 from "../images/couch1__15_-removebg-preview.png";
+import productImg37 from "../images/couch1__17_-removebg-preview.png";
+import productImg39 from "../images/couch1__19_-removebg-preview.png";
+//import productImg38 from "../images/couch-03.png"
 
-import productImg32 from "../images/triple-sofa-01.png";
-import productImg33 from "../images/triple-sofa-02.png";
-import productImg34 from "../images/triple-sofa-03.png";
+import productImg40 from "../images/table39.png";
+import productImg42 from "../images/table40.png";
+import productImg43 from "../images/table41.png";
+import productImg44 from "../images/table42.png";
+import productImg45 from "../images/table43.png";
+import productImg46 from "../images/table44.png";
+import productImg47 from "../images/table45.png";
+import productImg48 from "../images/table46.png";
+
 
 const products = [
   {
@@ -90,6 +103,29 @@ const products = [
     imgUrl: productImg03,
     category: "sofa",
     price: 173,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.6,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.7,
+  },
+
+  {
+    id: "39",
+    productName: "tripple seat gray couch",
+    imgUrl: productImg39,
+    category: "couch",
+    price: 260,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -630,9 +666,9 @@ const products = [
   },
   {
     id: "28",
-    productName: "cotton couch",
+    productName: "cream highdense",
     imgUrl: productImg28,
-    category: "couch",
+    category: "chair",
     price: 320,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -650,12 +686,57 @@ const products = [
     ],
     avgRating: 4.6,
   },
+ 
   {
-    id: "29",
-    productName: "fluffy couch",
+    id: "30",
+    productName: "curverd fine chair",
     imgUrl: productImg29,
+    category: "chair",
+    price: 350,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  // {
+  //   id: "31",
+  //   productName: "modern c&m couch",
+  //   imgUrl: productImg31,
+  //   category: "couch",
+  //   price: 150,
+  //   shortDesc:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  //   reviews: [
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.9,
+  // },
+  {
+    id: "32",
+    productName: "cream couch",
+    imgUrl: productImg32,
     category: "couch",
-    price: 150,
+    price: 250,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -673,9 +754,9 @@ const products = [
     avgRating: 4.9,
   },
   {
-    id: "30",
-    productName: "silk couch",
-    imgUrl: productImg30,
+    id: "33",
+    productName: "dark couch",
+    imgUrl: productImg33,
     category: "couch",
     price: 350,
     shortDesc:
@@ -695,8 +776,30 @@ const products = [
     avgRating: 4.9,
   },
   {
+    id: "34",
+    productName: "gray cotton couch",
+    imgUrl: productImg34,
+    category: "couch",
+    price: 260,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
     id: "31",
-    productName: "leather couch",
+    productName: "double seat couch",
     imgUrl: productImg31,
     category: "couch",
     price: 150,
@@ -717,11 +820,11 @@ const products = [
     avgRating: 4.9,
   },
   {
-    id: "32",
-    productName: "x-rated sofa",
-    imgUrl: productImg32,
-    category: "sofaseat",
-    price: 150,
+    id: "35",
+    productName: "curved couch",
+    imgUrl: productImg35,
+    category: "couch",
+    price: 200,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -739,11 +842,11 @@ const products = [
     avgRating: 4.9,
   },
   {
-    id: "33",
-    productName: "triple sofa",
-    imgUrl: productImg33,
-    category: "sofaseat",
-    price: 220,
+    id: "36",
+    productName: "white stylish-curved couch",
+    imgUrl: productImg36,
+    category: "couch",
+    price: 350,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -761,11 +864,11 @@ const products = [
     avgRating: 4.9,
   },
   {
-    id: "34",
-    productName: "dense sofa",
-    imgUrl: productImg34,
-    category: "sofaseat",
-    price: 150,
+    id: "37",
+    productName: "cream fine-cuved couch",
+    imgUrl: productImg37,
+    category: "couch",
+    price: 400,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -782,6 +885,210 @@ const products = [
     ],
     avgRating: 4.9,
   },
+  // {
+  //   id: "38",
+  //   productName: "tripple seater couch",
+  //   imgUrl: productImg38,
+  //   category: "couch",
+  //   price: 330,
+  //   shortDesc:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+  //   reviews: [
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //     {
+  //       rating: 4.9,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.9,
+  // },
+  {
+    id: "40",
+    productName: "marble table",
+    imgUrl: productImg40,
+    category: "table",
+    price: 200,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "42",
+    productName: "round table",
+    imgUrl: productImg42,
+    category: "table",
+    price: 330,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  
+  {
+    id: "43",
+    productName: "fine square table",
+    imgUrl: productImg43,
+    category: "table",
+    price: 199,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "44",
+    productName: "ceramic table",
+    imgUrl: productImg44,
+    category: "table",
+    price: 250,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "45",
+    productName: "round wooden table",
+    imgUrl: productImg45,
+    category: "table",
+    price: 100,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "46",
+    productName: "marble dark table",
+    imgUrl: productImg46,
+    category: "table",
+    price: 330,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "47",
+    productName: "mahogany wooden table",
+    imgUrl: productImg47,
+    category: "table",
+    price: 330,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  {
+    id: "48",
+    productName: "marble white table",
+    imgUrl: productImg48,
+    category: "table",
+    price: 250,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.9,
+  },
+  
+  
+  
+  
+ 
 ];
 
 export default products;

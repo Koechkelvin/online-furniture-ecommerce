@@ -43,8 +43,32 @@ const Footer = () => {
               </ListGroup>
           </div>
           </Col>
-          <Col lg="2" md='3' className="mb-4">
+          
+          <Col lg="3" md='4' > 
           <div className="footer__quick-links">
+            <h4 className='quick__links-title'>Useful Links</h4>
+              <ListGroup className='mb-3'>
+                <ListGroupItem className='ps-0 border-0'>
+                  <Link to='/shop'>Shop</Link>
+                </ListGroupItem>
+
+                <ListGroupItem className='ps-0 border-0'> 
+                  <Link to='/cart'>Cart</Link>
+                </ListGroupItem>
+
+                <ListGroupItem className='ps-0 border-0'>
+                  <Link to='/login'>Login</Link>
+                </ListGroupItem>
+
+                <ListGroupItem className='ps-0 border-0'>
+                  <Link to=''>Home</Link>
+                </ListGroupItem>
+              </ListGroup>
+              </div>
+              
+          </Col>
+          <Col lg="2" md='3' className="mb-4">
+           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Contacts</h4>
               <ListGroup className='footer__contact'>
                 <ListGroupItem className='ps-0 border-0 d-flex
@@ -73,30 +97,8 @@ const Footer = () => {
               </ListGroup>
               </div>
           </Col>
-          <Col lg="3" md='4' > 
-          <div className="footer__quick-links">
-            <h4 className='quick__links-title'>Useful Links</h4>
-              <ListGroup className='mb-3'>
-                <ListGroupItem className='ps-0 border-0'>
-                  <Link to='/shop'>Shop</Link>
-                </ListGroupItem>
-
-                <ListGroupItem className='ps-0 border-0'> 
-                  <Link to='/cart'>Cart</Link>
-                </ListGroupItem>
-
-                <ListGroupItem className='ps-0 border-0'>
-                  <Link to='/login'>Login</Link>
-                </ListGroupItem>
-
-                <ListGroupItem className='ps-0 border-0'>
-                  <Link to=''>Privacy policy</Link>
-                </ListGroupItem>
-              </ListGroup>
-              </div>
-          </Col>
           <Col lg='12'>
-          <p className="footer__copyright">Copyright {year} built by Kelvin Koech. All rights reserved.
+          <p className="footer__copyright">Copyright {year} built by Kelvin.All rights reserved.
 
           </p>
           </Col>

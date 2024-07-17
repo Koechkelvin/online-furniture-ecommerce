@@ -2,7 +2,7 @@
     border:1px solid var(--primary-color);
     padding: 8px 20px;
     background: var(--primary-color)
-    color(#fff);
+    color(#7e5df5);
     cursor: pointer;
     border-radius: 5px;
 }
@@ -30,4 +30,7 @@
 } 
 .search__box span {
     color: var(--primary-color);
+}
+.filter__widgets{
+    border-radius: 10px;
 }

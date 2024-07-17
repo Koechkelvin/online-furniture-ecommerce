@@ -6,10 +6,10 @@
     font-size: 1.6rem;
 }
 .product__details span i {
-    color: coral;
+    color: #87CEFA;
 }
 .product__rating p span {
-    color: coral;
+    color: #87CEFA;
     font-weight: 500; 
 }
 .product__price {

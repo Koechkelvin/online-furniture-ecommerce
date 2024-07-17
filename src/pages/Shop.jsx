@@ -18,9 +18,9 @@ const Shop = () => {
       setProductsData(filteredProducts);
     }
 
-    if (filterValue === "mobile") {
+    if (filterValue === "table") {
       const filteredProducts = products.filter(
-        (item) => item.category === "mobile"
+        (item) => item.category === "table"
       );
       setProductsData(filteredProducts);
     }
@@ -62,6 +62,7 @@ const Shop = () => {
                   <option value="sofa">Sofa</option>
                   <option value="chair">Chair</option>
                   <option value="couch">Couch</option>
+                  ,<option value="table">table</option>
                 </select>
               </div>
             </Col>
