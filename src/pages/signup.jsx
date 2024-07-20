@@ -8,6 +8,7 @@ import { setDoc, doc } from "firebase/firestore";
 
 import { auth, storage, db } from '../firebase.config';
 import { toast } from "react-toastify";
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
   const [username, setUsername] = useState('');
@@ -15,25 +16,22 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleSignup = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setError(null);
 
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
       if (file) {
-        const storageRef = ref(storage, `images/${Date.now()}_${username}`);
+        const storageRef = ref(storage, `images/${Date.now()}+ ${username}`);
         const uploadTask = uploadBytesResumable(storageRef, file);
 
         uploadTask.on('state_changed',
-          (snapshot) => {
-            // Observe state change events such as progress, pause, and resume
-          },
+          (snapshot) => {},
           (error) => {
             toast.error(error.message);
             setLoading(false);
@@ -54,6 +52,7 @@ const Signup = () => {
 
             toast.success("Account created successfully!");
             setLoading(false);
+            navigate('/');  // Redirect to homepage or any other page
           }
         );
       } else {
@@ -69,6 +68,7 @@ const Signup = () => {
 
         toast.success("Account created successfully!");
         setLoading(false);
+        navigate('/login');  
       }
 
       console.log(user);
@@ -86,7 +86,6 @@ const Signup = () => {
           <Row>
             <Col lg='6' className='m-auto text-center'>
               <h3 className='fw-bold mb-4'>Sign up</h3>
-              {error && <p className="error">{error}</p>}
               <Form className='auth__form' onSubmit={handleSignup}>
                 <FormGroup className='form__group'>
                   <input

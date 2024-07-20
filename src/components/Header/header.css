@@ -45,16 +45,42 @@
     cursor: pointer;
     color: var(--primary-color);
 }
-.nav__icons span img{
+.nav__icons .profile img{
     height:30px ;
     width: 30px;
     cursor: pointer;
+    border-radius: 50%;
+}
+.nav__icons .profile {
+    position: relative;
+    z-index: 9;
+}
+.nav__icons .profile .profile__actions {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    z-index: 10;
+    width: 150px;
+    line-height: 30px;
+    left: 0;
+    top: 98%;
+    background: var(--card-bg-01);
+    display: none;
+    cursor: pointer;
+}
+.profile__actions{
+    display: none;
 }
 .mobile__menu{
     font-size: 1.3rem;
     color: var(--primary-color);
     display: none;
     
+}
+.show__profileActions .profile__actions{
+    display: block;
 }
 .nav__active{
 
