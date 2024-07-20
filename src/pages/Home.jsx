@@ -9,7 +9,7 @@ import products from '../assets/data/products';
 import Clock from '../components/UI/Clock';
 import heroImg from '../assets/images/hero-img.png';
 import counterImg from '../assets/images/counter-timer-img.png';
-import Services from "../services/Services"
+//import Services from "../services/Services"
 
 const Home = () => {
   const [trendingProducts, setTrendingProducts] = useState([]);
@@ -63,7 +63,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <Services />
+      {/* <Services /> */}
       <hr/>
       <section className='trending products'>
         <Container>

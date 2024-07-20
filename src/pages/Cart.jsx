@@ -21,12 +21,12 @@ const Cart = () => {
           <Col lg='9'>
 
             {cartItems.length ===0 ?  (
-              <h2 className='fs-4 text-center'>No item added to the cart</h2>
+              <h2 className='fs-4 text-center'>No item added to cart</h2>
               ): (
               <table className="table bordered">
               <thead>
                 <tr>
-                  <th>Image</th>
+                 
                   <th>Title</th>
                   <th>Price</th>
                   <th>Qty</th>
@@ -44,9 +44,8 @@ const Cart = () => {
           </Col>
           <Col lg='3'>
             <div>
-              <h6 className='d-flex align-items-center justify-content-between'>Subtotal
-              <span className='fs-4 fw-bold'>${totalAmount}</span></h6>
-              <p className='fs-6 mt-2'>taxes an shipping will calculate in checkout</p>
+              <h6 className='d-flex align-items-center justify-content-between'>Subtotal ${totalAmount}</h6>
+              <p className='fs-6 mt-2'>taxes will be calculated in checkout</p>
               <div>
               <button className="buy__btn w-100">
                 <Link to='/checkout'>Checkout</Link>
@@ -71,7 +70,6 @@ const Tr =({item})=>{
     dispatch(cartActions.deleteItem(item.id))
   }
   return <tr>
-  <td><img src={item.imgUrl} alt=''></img></td>
   <td>{item.productName}</td>
   <td>${item.price}</td>
   <td>{item.quantity}px</td>

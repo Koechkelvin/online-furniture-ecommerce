@@ -1,19 +1,22 @@
+
 import { initializeApp } from "firebase/app";
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
+import { getAuth } from "firebase/auth";
+import {getFirestore} from 'firebase/firestore';
+import {getStorage} from "firebase/storage";
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCeRP9VtKwrRrzfZytXZqMPlTTqjS-cSI4",
-  authDomain: "furniture-shop-2e044.firebaseapp.com",
-  projectId: "furniture-shop-2e044",
-  storageBucket: "furniture-shop-2e044.appspot.com",
-  messagingSenderId: "457185070071",
-  appId: "1:457185070071:web:e7082635b7c4d966423cf2"
+  apiKey: "AIzaSyC7mugEFxqUyHZZnFyEXR07j6P7zWMtscs",
+  authDomain: "furniture-ecommerce-f83da.firebaseapp.com",
+  projectId: "furniture-ecommerce-f83da",
+  storageBucket: "furniture-ecommerce-f83da.appspot.com",
+  messagingSenderId: "625658468029",
+  appId: "1:625658468029:web:f1560917d1527c24f689d4"
 };
 
+
 const app = initializeApp(firebaseConfig);
-export const auth =getAuth(app)
-export const db = getFirestore(app)
-export const storage = getStorage(app)
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const storage = getStorage(app);
 export default app;

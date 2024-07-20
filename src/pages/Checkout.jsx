@@ -2,6 +2,7 @@ import React from 'react'
 import { Container,Row,Col, FormGroup,Form } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
 import CommonSection from '../components/UI/CommonSection';
+//import '../styles/checkout.css';
 
 import { useSelector } from 'react-redux';
 const Checkout = () => {
@@ -17,24 +18,26 @@ const Checkout = () => {
           <h6 className="mb-4 fw-bold">Billing infomation</h6>
           <Form className='billing__form'>
             <FormGroup  className='form__group'>
-              <input type='text' placeholder='Enter your Firstname'></input>
+              <input type='text' placeholder='Enter your name'></input>
             </FormGroup>
             <FormGroup  className='form__group'>
-              <input type='email' placeholder='Enter your Lastname'></input>
+              <input type='email' placeholder='Enter your email'></input>
             </FormGroup>
             <FormGroup  className='form__group'>
               <input type='number' placeholder='Phone Number'></input>
             </FormGroup>
             <FormGroup  className='form__group'>
-              <input type='number' placeholder='Id number'></input>
+              <input type='text' placeholder='Stress Address'></input>
             </FormGroup>
             <FormGroup  className='form__group'>
-              <input type='text' placeholder='Region'></input>
+              <input type='text' placeholder='City'></input>
             </FormGroup>
             <FormGroup  className='form__group'>
-              <input type='text' placeholder='Location'></input>
+              <input type='text' placeholder='Postal Code'></input>
             </FormGroup>
-            
+            <FormGroup  className='form__group'>
+              <input type='text' placeholder='Country'></input>
+            </FormGroup>
           </Form>
         </Col>
         <Col lg='4'>
