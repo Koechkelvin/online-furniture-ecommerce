@@ -52,7 +52,7 @@ const Signup = () => {
 
             toast.success("Account created successfully!");
             setLoading(false);
-            navigate('/');  // Redirect to homepage or any other page
+            navigate('/login'); 
           }
         );
       } else {

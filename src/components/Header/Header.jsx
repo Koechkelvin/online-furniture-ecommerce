@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate, } from 'react-router-dom';
 import { Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './header.css';
@@ -10,8 +10,8 @@ import logo from '../../assets/images/eco-logo.png';
 import { useSelector } from 'react-redux';
 
 import useAuth from '../../custom-hooks/useAuth';
-import {signOut} from 'firebase/auth';
-import {auth} from '../../firebase.config';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../firebase.config';
 import { toast } from 'react-toastify';
 
 const nav__links = [
@@ -51,14 +51,15 @@ const Header = () => {
     });
   };
 
-  const logout =()=>{
-    signOut(auth).then(()=>{
-      toast.success("Logged out")
-
-    }).catch(err=>{
-      toast.error(err.message)
-    })
-  }
+  const logout = () => {
+    signOut(auth)
+      .then(() => {
+        toast.success("Logged out");
+      })
+      .catch(err => {
+        toast.error(err.message);
+      });
+  };
 
   useEffect(() => {
     stickyHeaderFunc();
@@ -92,8 +93,7 @@ const Header = () => {
                   <li className='nav__item' key={index}>
                     <NavLink to={item.path} className={(navClass) =>
                       navClass.isActive ? 'nav__active' : ''
-                    }>{item.display}
-                    </NavLink>
+                    }>{item.display}</NavLink>
                   </li>
                 ))}
               </motion.ul>
@@ -110,21 +110,19 @@ const Header = () => {
                 </span>
               </Link>
               <div className='profile'>
-                <motion.img 
-                  whileTap={{ scale: 1.2 }} 
+                <motion.img
+                  whileTap={{ scale: 1.2 }}
                   src={currentUser ? currentUser.photoURL : userIcon}
-                  alt=""
-                  onClick={toggleProfileActions}
-                />
-                <div className='profile__actions' ref={profileActionRef}>
-                  {currentUser ? (
-                    <span onClick={logout}>Logout</span>
-                  ) : (
-                    <div>
-                      <Link to="/signup">Signup</Link>
-                      <Link to="/login">Login</Link>
+                  alt=""  
+                  />
+                 <div className='profile__actions'>
+                  {
+                    currentUser ? <span>Logout</span> : <div>
+                      <Link to='/signup'>Signup</Link>
+                      <Link to='/login'>Login</Link>
                     </div>
-                  )}
+                  }
+                
                 </div>
               </div>
               <div className='mobile__menu'>

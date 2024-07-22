@@ -66,7 +66,7 @@ const Shop = () => {
                 </select>
               </div>
             </Col>
-            <Col lg="3" md="3">
+            {/* <Col lg="3" md="3">
               <div className='filter__widgets'>
                 <select>
                   <option>Sort By</option>
@@ -74,7 +74,7 @@ const Shop = () => {
                   <option value="descending">Descending</option>
                 </select>
               </div>
-            </Col>
+            </Col> */}
             <Col lg="3" md="3">
               <div className='search__box'>
                 <input type="text" placeholder="Search......"
