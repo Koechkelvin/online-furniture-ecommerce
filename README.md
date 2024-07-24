@@ -1,1 +1,1 @@
-i have done the setup
+This is an online furniture store which clients order the furniture of their choice, It has features like home page in which it has a header and a footer and a very interactive user interface (UI), it also has a cart feature in which the products selected is added to the cart and the sub total is calculated, before the user checks out they have to sign in first. You can also upload a profile picture to your account.Moreover it has products listings and details and also give you suggestions of what you might also want to shop according to your choices.
