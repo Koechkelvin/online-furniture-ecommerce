@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { NavLink, useNavigate, } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './header.css';
@@ -33,7 +33,6 @@ const Header = () => {
   const headerRef = useRef(null);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const profileActionRef = useRef(null);
-
   const menuRef = useRef(null);
   const navigate = useNavigate();
   const { currentUser } = useAuth();
@@ -51,14 +50,18 @@ const Header = () => {
     });
   };
 
-  const logout = () => {
-    signOut(auth)
-      .then(() => {
-        toast.success("Logged out");
-      })
-      .catch(err => {
-        toast.error(err.message);
-      });
+  const logout = async () => {
+    try {
+      await signOut(auth);
+      toast.success("Logged out");
+      navigate('/login');
+    } catch (err) {
+      toast.error(err.message);
+    }
+  };
+
+  const toggleProfileActions = () => {
+    profileActionRef.current.classList.toggle('show__profileActions');
   };
 
   useEffect(() => {
@@ -67,14 +70,6 @@ const Header = () => {
   }, []);
 
   const menuToggle = () => menuRef.current.classList.toggle('active__menu');
-
-  const navigateToCart = () => {
-    navigate('/cart');
-  };
-
-  const toggleProfileActions = () => {
-    profileActionRef.current.classList.toggle('show__profileActions');
-  };
 
   return (
     <header className="header" ref={headerRef}>
@@ -100,9 +95,9 @@ const Header = () => {
             </div>
             <div className='nav__icons'>
               <span className="fav__icon">
-                <i className="ri-heart-line"></i>
-                <span className='badge'>2</span>
-              </span>
+                <i></i>
+                <span className='badge'></span>
+              </span> 
               <Link to="/cart">
                 <span className="cart__icon">
                   <i className="ri-shopping-cart-line"></i>
@@ -113,21 +108,26 @@ const Header = () => {
                 <motion.img
                   whileTap={{ scale: 1.2 }}
                   src={currentUser ? currentUser.photoURL : userIcon}
-                  alt=""  
-                  />
-                 <div className='profile__actions'>
+                  alt="user icon"
+                  onClick={toggleProfileActions}
+                />
+                <div className='profile__actions' ref={profileActionRef}>
                   {
-                    currentUser ? <span>Logout</span> : <div>
-                      <Link to='/signup'>Signup</Link>
-                      <Link to='/login'>Login</Link>
-                    </div>
+                    currentUser ? (
+                      <span onClick={logout}>Logout</span>
+                    ) : (
+                      <div>
+                        <Link to='/signup'>Signup</Link>
+                        <Link to='/login'>Login</Link>
+                        <Link to='/home'>logout</Link>
+                      </div>
+                    )
                   }
-                
                 </div>
               </div>
               <div className='mobile__menu'>
                 <span onClick={menuToggle}>
-                  <i className="ri-menu-line"></i>
+                  <i className="ri-more-2-fill"></i>
                 </span>
               </div>
             </div>

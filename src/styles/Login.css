@@ -1,6 +1,80 @@
-.login-container{
-border-radius: 15px;
-margin: 4px;
-background-color: rgba(30, 133, 217, 0.601);
-align-items: center;
-}
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+   
+  }
+  
+  section {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h3.fw-bold {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .auth__form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form__group {
+    margin-bottom: 20px;
+  }
+  
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type='email']:focus,
+  input[type='password']:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .buy__btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy__btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .buy__btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Helmet from '../components/Helmet/Helmet';
 import CommonSection from '../components/UI/CommonSection';
 import { Container, Row, Col } from "reactstrap";
-import '../styles/shop.css';
+import '../styles/Signup.css';
 import products from '../assets/data/products';
 import ProductsList from '../components/UI/ProductsList';
 
@@ -40,13 +40,13 @@ const Shop = () => {
     }
   };
 
-  const handleSearch =e=> {
-    const searchTerm =e.target.value
+  const handleSearch = e => {
+    const searchTerm = e.target.value;
 
-    const searchedProducts = products.filter(item=> item.productName
+    const searchedProducts = products.filter(item => item.productName
       .toLowerCase().includes(searchTerm.toLowerCase())
-    )
-    setProductsData(searchedProducts)
+    );
+    setProductsData(searchedProducts);
   }
 
   return (
@@ -62,24 +62,14 @@ const Shop = () => {
                   <option value="sofa">Sofa</option>
                   <option value="chair">Chair</option>
                   <option value="couch">Couch</option>
-                  ,<option value="table">table</option>
+                  <option value="table">Table</option>
                 </select>
               </div>
             </Col>
-            {/* <Col lg="3" md="3">
-              <div className='filter__widgets'>
-                <select>
-                  <option>Sort By</option>
-                  <option value="ascending">Ascending</option>
-                  <option value="descending">Descending</option>
-                </select>
-              </div>
-            </Col> */}
+            
             <Col lg="3" md="3">
               <div className='search__box'>
-                <input type="text" placeholder="Search......"
-                onChange={handleSearch} 
-                />
+                <input type="text" placeholder="Search......" onChange={handleSearch} />
                 <span>
                   <i className="ri-search-line"></i>
                 </span>

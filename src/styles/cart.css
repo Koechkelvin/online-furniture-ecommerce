@@ -11,3 +11,6 @@ td i{
 td, .th{
     color: var(--primary-color);
 }
+.ri-delete-bin-line  {
+    color: red;
+}

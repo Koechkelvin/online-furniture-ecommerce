@@ -9,6 +9,7 @@ import { setDoc, doc } from "firebase/firestore";
 import { auth, storage, db } from '../firebase.config';
 import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
+import '../styles/Signup.css';
 
 const Signup = () => {
   const [username, setUsername] = useState('');

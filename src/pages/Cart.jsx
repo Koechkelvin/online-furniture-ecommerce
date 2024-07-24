@@ -47,7 +47,7 @@ const Cart = () => {
               <h6 className='d-flex align-items-center justify-content-between'>Total ${totalAmount}</h6>
               <div>
               <button className="buy__btn w-100">
-                <Link to='/login'>Checkout</Link>
+                <Link to='/Signup'>Checkout</Link>
               </button>
               <button className="buy__btn w-100  mt-3">
                 <Link to='/shop'>Continue Shopping</Link>
